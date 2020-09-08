@@ -1,0 +1,43 @@
+body{
+    background-color: #5d576B
+}
+
+.Form{
+    background-color: #FCFCFC;
+    border-color:#F7567C;
+    border-radius: 25px;
+    border-style: solid;
+    border-width:thick;
+}
+.Form_Row{
+    /*width: fit-content;
+    min-width: 50%;*/
+    margin: auto;
+}
+.cover{
+    /*width: 100vw;
+    height: 100vh;*/
+}
+.list_title {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.list_item{
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.list_cover{
+    align-items: center;
+    width: fit-content;
+    background-color:#99E1D9;
+    border-color: #FFFAE3;
+    border-style:solid;
+    border-width:medium;
+    margin-bottom: 5vh;
+}
+.wrapper{
+    font-size: 1.5em;
+}
