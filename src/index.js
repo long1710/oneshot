@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Amplify from '@aws-amplify/core'
-import config from './aws-exports'
-Amplify.configure(config)
+import Firebase, {FirebaseContext} from "./Firebase"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <FirebaseContext.Provider value = {new Firebase()}>
+    <FirebaseContext.Consumer>
+      {firebase => <App firebase={firebase} />}
+    </FirebaseContext.Consumer>
+  </FirebaseContext.Provider>,
   document.getElementById('root')
 );
 
