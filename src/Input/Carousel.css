@@ -1,0 +1,12 @@
+.carousel .slide img {
+    width: 255px;
+    height: 330px;   
+}
+
+.dot {
+    visibility: hidden;
+}
+
+.carousel-status{
+    visibility: hidden;
+}
